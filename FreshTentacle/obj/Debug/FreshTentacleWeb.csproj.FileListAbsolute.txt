@@ -1,0 +1,7 @@
+C:\Jon\Projects\FreshTentacle\FreshTentacle\bin\FreshTentacle.dll
+C:\Jon\Projects\FreshTentacle\FreshTentacle\bin\FreshTentacle.pdb
+C:\Jon\Projects\FreshTentacle\FreshTentacle\obj\Debug\ResolveAssemblyReference.cache
+C:\Jon\Projects\FreshTentacle\FreshTentacle\obj\Debug\FreshTentacle.dll
+C:\Jon\Projects\FreshTentacle\FreshTentacle\obj\Debug\FreshTentacle.pdb
+C:\Jon\Projects\FreshTentacle\FreshTentacle\bin\DomainModel.dll
+C:\Jon\Projects\FreshTentacle\FreshTentacle\bin\DomainModel.pdb

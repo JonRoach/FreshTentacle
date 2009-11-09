@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Web Developer Express 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreshTentacleWeb", "FreshTentacleWeb.csproj", "{7EBB43BC-CEB4-48F0-9707-E309B70366BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainModel", "..\DomainModel\DomainModel.csproj", "{3148DFD9-33C5-437E-93E3-AC601B549A09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "..\Tests\Tests.csproj", "{CD786B8A-3F6F-4BFF-8540-8F0DE5ABB13C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7EBB43BC-CEB4-48F0-9707-E309B70366BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EBB43BC-CEB4-48F0-9707-E309B70366BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EBB43BC-CEB4-48F0-9707-E309B70366BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EBB43BC-CEB4-48F0-9707-E309B70366BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3148DFD9-33C5-437E-93E3-AC601B549A09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3148DFD9-33C5-437E-93E3-AC601B549A09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3148DFD9-33C5-437E-93E3-AC601B549A09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3148DFD9-33C5-437E-93E3-AC601B549A09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD786B8A-3F6F-4BFF-8540-8F0DE5ABB13C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD786B8A-3F6F-4BFF-8540-8F0DE5ABB13C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD786B8A-3F6F-4BFF-8540-8F0DE5ABB13C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD786B8A-3F6F-4BFF-8540-8F0DE5ABB13C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

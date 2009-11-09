@@ -1,0 +1,5 @@
+C:\Jon\Projects\FreshTentacle\Tests\bin\Debug\Tests.dll
+C:\Jon\Projects\FreshTentacle\Tests\bin\Debug\Tests.pdb
+C:\Jon\Projects\FreshTentacle\Tests\obj\Debug\ResolveAssemblyReference.cache
+C:\Jon\Projects\FreshTentacle\Tests\obj\Debug\Tests.dll
+C:\Jon\Projects\FreshTentacle\Tests\obj\Debug\Tests.pdb
