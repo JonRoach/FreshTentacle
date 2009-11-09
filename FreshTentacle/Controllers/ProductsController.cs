@@ -19,16 +19,19 @@ namespace FreshTentacle.Controllers
             this.productsRepository = productsRepository;
         }
 
-        public ViewResult List(int page)
+        public ViewResult List(string category, int page)
         {
-            int numProducts = productsRepository.Products.Count();
+            var productsInCategory = (category == null) ? productsRepository.Products : productsRepository.Products.Where(x => x.Category == category);
+
+            int numProducts = productsInCategory.Count();
             ViewData["TotalPages"] = (int)Math.Ceiling((double)numProducts / PageSize);
             ViewData["CurrentPage"] = page;
+            ViewData["CurrentCategory"] = category; // For use when generating page links
 
-            return View(productsRepository.Products
-                                          .Skip((page - 1) * PageSize)
-                                          .Take(PageSize)
-                                          .ToList()
+            return View(productsInCategory
+                            .Skip((page - 1) * PageSize)
+                            .Take(PageSize)
+                            .ToList()
                         );
         }
 
