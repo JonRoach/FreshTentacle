@@ -15,13 +15,19 @@ namespace FreshTentacle
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+            
+            routes.MapRoute(
+                null,   // Dont bother giving this one a name
+                "",     // matches the root url
+                new { controller = "Products", action = "List", page = 1}   // Defaults
+                );
 
             routes.MapRoute(
-                "Default",                                                  // Route name
-                "{controller}/{action}/{id}",                               // URL with parameters
-                new { controller = "Products", action = "List", id = "" }   // Parameter defaults
-            );
-
+                null,
+                "Page{page}",   // URL pattern, e.g. ~/Page69
+                new { controller = "Products", action = "List" },    // Defaults
+                new { page = @"\d+" }   // Constraints: page must be numerical
+                );
         }
 
         protected void Application_Start()
