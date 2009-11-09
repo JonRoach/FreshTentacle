@@ -13,4 +13,11 @@
         </div>
     <% } %>
     
+    <div class="pager">
+        Page: <%= 
+                  Html.PageLinks((int)ViewData["CurrentPage"],
+                  (int)ViewData["TotalPages"],
+                  x => Url.Action("List", new { page = x })) %>
+    </div>
+    
 </asp:Content>

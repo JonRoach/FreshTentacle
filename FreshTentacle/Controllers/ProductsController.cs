@@ -21,6 +21,10 @@ namespace FreshTentacle.Controllers
 
         public ViewResult List(int page)
         {
+            int numProducts = productsRepository.Products.Count();
+            ViewData["TotalPages"] = (int)Math.Ceiling((double)numProducts / PageSize);
+            ViewData["CurrentPage"] = page;
+
             return View(productsRepository.Products
                                           .Skip((page - 1) * PageSize)
                                           .Take(PageSize)
