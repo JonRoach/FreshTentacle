@@ -12,12 +12,9 @@ namespace FreshTentacle.Controllers
     public class ProductsController : Controller
     {
         private IProductsRepository productsRepository;
-        public ProductsController()
+        public ProductsController(IProductsRepository productsRepository)
         {
-            // Temporary hard-coded connection string until we setup Inversion of Control
-            string connString = @"Server=.\SQLEXPRESS;Database=FreshTentacle;Trusted_Connection=yes;";
-            productsRepository = new SqlProductsRepository(connString);
-            
+            this.productsRepository = productsRepository;
         }
 
         public ViewResult List()

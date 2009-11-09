@@ -5,3 +5,8 @@ C:\Jon\Projects\FreshTentacle\FreshTentacle\obj\Debug\FreshTentacle.dll
 C:\Jon\Projects\FreshTentacle\FreshTentacle\obj\Debug\FreshTentacle.pdb
 C:\Jon\Projects\FreshTentacle\FreshTentacle\bin\DomainModel.dll
 C:\Jon\Projects\FreshTentacle\FreshTentacle\bin\DomainModel.pdb
+C:\Jon\Projects\FreshTentacle\FreshTentacle\bin\Castle.DynamicProxy2.dll
+C:\Jon\Projects\FreshTentacle\FreshTentacle\bin\Castle.DynamicProxy2.xml
+C:\Jon\Projects\FreshTentacle\FreshTentacle\bin\Castle.MicroKernel.xml
+C:\Jon\Projects\FreshTentacle\FreshTentacle\bin\Castle.Windsor.xml
+C:\Jon\Projects\FreshTentacle\FreshTentacle\bin\Castle.Core.xml
