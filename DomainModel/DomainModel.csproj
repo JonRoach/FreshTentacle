@@ -51,6 +51,7 @@
     <Compile Include="Abstract\IProductsRepository.cs" />
     <Compile Include="Concrete\FakeProductsRepository.cs" />
     <Compile Include="Concrete\SqlProductsRepository.cs" />
+    <Compile Include="Entities\Cart.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
