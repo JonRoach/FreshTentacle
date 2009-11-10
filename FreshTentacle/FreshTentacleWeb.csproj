@@ -76,6 +76,7 @@
     <Content Include="Content\styles.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Views\Nav\Menu.ascx" />
     <Content Include="Views\Products\List.aspx" />
     <Content Include="Views\Shared\ProductSummary.ascx" />
     <Content Include="Web.config" />

@@ -13,7 +13,7 @@
     <div id="categories">
         <% Html.RenderAction("Menu", "Nav"); %>
     </div>
-    <div id="content"
+    <div id="content">
         <asp:ContentPlaceHolder ID="MainContent" runat="server" />
     </div>
 </body>
