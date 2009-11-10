@@ -11,7 +11,7 @@
         <div class="title">FreshTentacle Sushi</div>
     </div>
     <div id="categories">
-        Will put something awesome here later...
+        <% Html.RenderAction("Menu", "Nav"); %>
     </div>
     <div id="content"
         <asp:ContentPlaceHolder ID="MainContent" runat="server" />
