@@ -59,6 +59,8 @@
     <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CartModelBinder.cs" />
+    <Compile Include="Controllers\CartController.cs" />
     <Compile Include="Controllers\NavController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Default.aspx.cs">
@@ -76,6 +78,7 @@
     <Content Include="Content\styles.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Views\Cart\Index.aspx" />
     <Content Include="Views\Nav\Menu.ascx" />
     <Content Include="Views\Products\List.aspx" />
     <Content Include="Views\Shared\ProductSummary.ascx" />
