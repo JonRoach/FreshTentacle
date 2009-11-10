@@ -63,6 +63,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InboundRoutingTests.cs" />
+    <Compile Include="OutboundRoutingTests.cs" />
     <Compile Include="PagingHelperTests.cs" />
     <Compile Include="ProductsControllerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
