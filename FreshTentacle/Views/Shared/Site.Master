@@ -8,6 +8,7 @@
     </head>
     <body>
         <div id="header">
+            <% if (!(ViewContext.Controller is FreshTentacle.Controllers.CartController)) Html.RenderAction("Summary", "Cart"); %>
             <div class="title">FreshTentacle Sushi</div>
         </div>
         <div id="categories">

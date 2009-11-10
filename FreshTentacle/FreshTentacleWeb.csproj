@@ -79,6 +79,7 @@
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Views\Cart\Index.aspx" />
+    <Content Include="Views\Cart\Summary.ascx" />
     <Content Include="Views\Nav\Menu.ascx" />
     <Content Include="Views\Products\List.aspx" />
     <Content Include="Views\Shared\ProductSummary.ascx" />
