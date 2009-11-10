@@ -15,19 +15,30 @@ namespace FreshTentacle
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-            
-            routes.MapRoute(
-                null,   // Dont bother giving this one a name
-                "",     // matches the root url
-                new { controller = "Products", action = "List", page = 1}   // Defaults
-                );
 
-            routes.MapRoute(
-                null,
-                "Page{page}",   // URL pattern, e.g. ~/Page69
+            routes.MapRoute(null,
+                "",                     // Only matches the empty URL (ie ~/)
+                new { controller = "Products", action = "List", category = (string)null, page = 1 }
+            );
+
+            routes.MapRoute(null,
+                "Page{page}",               // Matches ~/Page2, ~/Page123, but not ~/PageXYZ
+                new { controller = "Products", action = "List", category = (string)null },
+                new { page = @"\d+" }       // Constraints: page must be numerical
+            );
+
+            routes.MapRoute(null,
+                "{category}",               // Matches ~/Sashimi or ~/AnythingWithNoSlash
+                new { controller = "Products", action = "List", page = 1 }
+            );
+
+            routes.MapRoute(null,
+                "{category}/Page{page}",    // Matches ~/Sashimi/Page567
                 new { controller = "Products", action = "List" },    // Defaults
-                new { page = @"\d+" }   // Constraints: page must be numerical
-                );
+                new { page = @"\d+" }       // Constraints: page must be numerical
+            );
+
+            routes.MapRoute(null, "{controller}/{action}");
         }
 
         protected void Application_Start()

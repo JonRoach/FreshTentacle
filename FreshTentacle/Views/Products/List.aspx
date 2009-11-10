@@ -13,7 +13,7 @@
         Page: <%= 
                   Html.PageLinks((int)ViewData["CurrentPage"],
                   (int)ViewData["TotalPages"],
-                  x => Url.Action("List", new { page = x })) %>
+                  x => Url.Action("List", new { page = x, category = ViewData["CurrentCategory"] })) %>
     </div>
     
 </asp:Content>
